@@ -10,8 +10,8 @@
 
     <Button
         android:id="@+id/eight"
-        android:layout_width="85dp"
-        android:layout_height="69dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/btn_bg"
         android:text="@string/eight"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -25,7 +25,7 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="69dp"
+        android:layout_height="70dp"
         android:background="@drawable/btn_bg"
         android:gravity="end|center_vertical"
         android:text="@string/result"
@@ -38,8 +38,8 @@
 
     <Button
         android:id="@+id/x_pow_y"
-        android:layout_width="84dp"
-        android:layout_height="69dp"
+       android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/btn_bg"
         android:text="@string/powerXy"
         app:layout_constraintBottom_toTopOf="@+id/tanh"
@@ -52,8 +52,8 @@
 
     <Button
         android:id="@+id/square"
-        android:layout_width="84dp"
-        android:layout_height="69dp"
+       android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/btn_bg"
         android:text="@string/square"
         app:layout_constraintBottom_toTopOf="@+id/ex"
@@ -66,8 +66,8 @@
 
     <Button
         android:id="@+id/cube"
-        android:layout_width="84dp"
-        android:layout_height="69dp"
+       android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/btn_bg"
         android:text="@string/cube"
         app:layout_constraintBottom_toTopOf="@+id/tan"
@@ -80,8 +80,8 @@
 
     <Button
         android:id="@+id/tan"
-        android:layout_width="84dp"
-        android:layout_height="69dp"
+       android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/btn_bg"
         android:text="@string/tan"
         app:layout_constraintBottom_toTopOf="@+id/two"
@@ -94,8 +94,8 @@
 
     <Button
         android:id="@+id/two"
-        android:layout_width="84dp"
-        android:layout_height="69dp"
+       android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/btn_bg"
         android:text="@string/two"
         app:layout_constraintBottom_toTopOf="@+id/equal"
@@ -108,8 +108,8 @@
 
     <Button
         android:id="@+id/equal"
-        android:layout_width="84dp"
-        android:layout_height="69dp"
+       android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/btn_bg"
         android:text="@string/equal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -122,8 +122,8 @@
 
     <Button
         android:id="@+id/pi"
-        android:layout_width="85dp"
-        android:layout_height="69dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/btn_bg"
         android:text="@string/pi"
         app:layout_constraintBottom_toTopOf="@+id/ln"
@@ -136,8 +136,8 @@
 
     <Button
         android:id="@+id/root"
-        android:layout_width="84dp"
-        android:layout_height="69dp"
+       android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/btn_bg"
         android:text="@string/square_root"
         app:layout_constraintBottom_toTopOf="@+id/log"
@@ -150,8 +150,8 @@
 
     <Button
         android:id="@+id/y_underRoot_x"
-        android:layout_width="84dp"
-        android:layout_height="69dp"
+       android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/btn_bg"
         android:text="@string/yunderootx"
         app:layout_constraintBottom_toTopOf="@+id/factorial"
@@ -164,8 +164,8 @@
 
     <Button
         android:id="@+id/backspace"
-        android:layout_width="84dp"
-        android:layout_height="69dp"
+       android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/btn_bg"
         android:text="@string/backspace"
         app:layout_constraintBottom_toTopOf="@+id/lbracket"
@@ -178,8 +178,8 @@
 
     <Button
         android:id="@+id/CE"
-        android:layout_width="85dp"
-        android:layout_height="69dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/btn_bg"
         android:text="@string/CE"
         app:layout_constraintBottom_toTopOf="@+id/rbracket"
@@ -192,8 +192,8 @@
 
     <Button
         android:id="@+id/tanh"
-        android:layout_width="84dp"
-        android:layout_height="69dp"
+       android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/btn_bg"
         android:text="@string/tanh"
         app:layout_constraintBottom_toTopOf="@+id/three"
@@ -207,8 +207,8 @@
 
     <Button
         android:id="@+id/ex"
-        android:layout_width="84dp"
-        android:layout_height="69dp"
+       android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/btn_bg"
         android:text="@string/powerex"
         app:layout_constraintBottom_toTopOf="@+id/one"
@@ -221,8 +221,8 @@
 
     <Button
         android:id="@+id/ln"
-        android:layout_width="85dp"
-        android:layout_height="69dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/btn_bg"
         android:text="@string/ln"
         app:layout_constraintBottom_toTopOf="@+id/zero"
@@ -235,8 +235,8 @@
 
     <Button
         android:id="@+id/log"
-        android:layout_width="84dp"
-        android:layout_height="69dp"
+       android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/btn_bg"
         android:text="@string/log"
         app:layout_constraintBottom_toTopOf="@+id/multiply"
@@ -249,8 +249,8 @@
 
     <Button
         android:id="@+id/factorial"
-        android:layout_width="84dp"
-        android:layout_height="69dp"
+       android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/btn_bg"
         android:text="@string/factorial"
         app:layout_constraintBottom_toTopOf="@+id/divide"
@@ -263,8 +263,8 @@
 
     <Button
         android:id="@+id/lbracket"
-        android:layout_width="84dp"
-        android:layout_height="69dp"
+       android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/btn_bg"
         android:text="@string/lbracket"
         app:layout_constraintBottom_toTopOf="@+id/plus"
@@ -277,8 +277,8 @@
 
     <Button
         android:id="@+id/rbracket"
-        android:layout_width="85dp"
-        android:layout_height="69dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/btn_bg"
         android:text="@string/Rbracket"
         app:layout_constraintBottom_toTopOf="@+id/subtract"
@@ -291,8 +291,8 @@
 
     <Button
         android:id="@+id/three"
-        android:layout_width="84dp"
-        android:layout_height="69dp"
+       android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/btn_bg"
         android:text="@string/three"
         app:layout_constraintBottom_toTopOf="@+id/dot"
@@ -305,8 +305,8 @@
 
     <Button
         android:id="@+id/one"
-        android:layout_width="84dp"
-        android:layout_height="69dp"
+       android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/btn_bg"
         android:text="@string/one"
         app:layout_constraintBottom_toTopOf="@+id/nine"
@@ -319,8 +319,8 @@
 
     <Button
         android:id="@+id/zero"
-        android:layout_width="85dp"
-        android:layout_height="69dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/btn_bg"
         android:text="@string/zero"
         app:layout_constraintBottom_toTopOf="@+id/eight"
@@ -333,8 +333,8 @@
 
     <Button
         android:id="@+id/multiply"
-        android:layout_width="84dp"
-        android:layout_height="69dp"
+       android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/btn_bg"
         android:text="@string/multiply"
         app:layout_constraintBottom_toTopOf="@+id/seven"
@@ -347,8 +347,8 @@
 
     <Button
         android:id="@+id/divide"
-        android:layout_width="84dp"
-        android:layout_height="69dp"
+       android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/btn_bg"
         android:text="@string/divide"
         app:layout_constraintBottom_toTopOf="@+id/six"
@@ -361,8 +361,8 @@
 
     <Button
         android:id="@+id/plus"
-        android:layout_width="84dp"
-        android:layout_height="69dp"
+       android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/btn_bg"
         android:text="@string/plus"
         app:layout_constraintBottom_toTopOf="@+id/five"
@@ -375,8 +375,8 @@
 
     <Button
         android:id="@+id/subtract"
-        android:layout_width="85dp"
-        android:layout_height="69dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/btn_bg"
         android:text="@string/subtract"
         app:layout_constraintBottom_toTopOf="@+id/four"
@@ -389,8 +389,8 @@
 
     <Button
         android:id="@+id/dot"
-        android:layout_width="84dp"
-        android:layout_height="69dp"
+       android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/btn_bg"
         android:text="@string/dot"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -403,8 +403,8 @@
 
     <Button
         android:id="@+id/nine"
-        android:layout_width="84dp"
-        android:layout_height="69dp"
+       android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/btn_bg"
         android:text="@string/nine"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -417,8 +417,8 @@
 
     <Button
         android:id="@+id/seven"
-        android:layout_width="84dp"
-        android:layout_height="69dp"
+       android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/btn_bg"
         android:text="@string/seven"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -431,8 +431,8 @@
 
     <Button
         android:id="@+id/six"
-        android:layout_width="84dp"
-        android:layout_height="69dp"
+       android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/btn_bg"
         android:text="@string/six"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -445,8 +445,8 @@
 
     <Button
         android:id="@+id/five"
-        android:layout_width="84dp"
-        android:layout_height="69dp"
+       android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/btn_bg"
         android:text="@string/five"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -459,8 +459,8 @@
 
     <Button
         android:id="@+id/four"
-        android:layout_width="85dp"
-        android:layout_height="69dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/btn_bg"
         android:text="@string/four"
         app:layout_constraintBottom_toBottomOf="parent"
