@@ -125,13 +125,13 @@
        android:background="@drawable/btn_bg"
        android:text="@string/backspace"
        app:layout_constraintBottom_toTopOf="@+id/lbracket"
-       app:layout_constraintEnd_toStartOf="@+id/CE"
+       app:layout_constraintEnd_toStartOf="@+id/ce"
        app:layout_constraintHorizontal_bias="0.5"
        app:layout_constraintStart_toEndOf="@+id/y_underRoot_x"
        app:layout_constraintTop_toBottomOf="@+id/result" />
 
    <Button
-       android:id="@+id/CE"
+       android:id="@+id/ce"
        android:layout_width="0dp"
        android:layout_height="0dp"
        android:background="@drawable/btn_bg"
@@ -224,7 +224,7 @@
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintHorizontal_bias="0.5"
        app:layout_constraintStart_toEndOf="@+id/lbracket"
-       app:layout_constraintTop_toBottomOf="@+id/CE" />
+       app:layout_constraintTop_toBottomOf="@+id/ce" />
 
    <Button
        android:id="@+id/mod"
@@ -312,7 +312,7 @@
    <Button
        android:id="@+id/dot"
        android:layout_width="0dp"
-       android:layout_height="51dp"
+       android:layout_height="0dp"
        android:background="@drawable/btn_bg"
        android:text="@string/dot"
        app:layout_constraintBottom_toTopOf="@+id/equal"
