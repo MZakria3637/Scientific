@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import org.mariuszgromada.math.mxparser.*;
 
 public class MainActivity extends AppCompatActivity {
     Button one, two, three, four, five, six, seven, eight, nine, zero, dot, equal, plus, subtract, multiply, divide,
@@ -277,6 +278,17 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        equal = (Button) findViewById(R.id.equal);
+        equal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String rslt = result.getText().toString();
+                Expression e=new Expression(rslt);
+                rslt=String.valueOf(e.calculate());
+                result.setText(rslt);
+            }
+        });
+
     
 
     }
