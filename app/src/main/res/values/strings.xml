@@ -29,7 +29,7 @@
     <string name="powerXy">X<sup><small>y</small></sup></string>
     <string name="tan">tan</string>
     <string name="tanh">tan<sup><small>-1</small></sup></string>
-    <string name="powerex">"e<sup><small>x</small></sup>"</string>
+    <string name="powerex">e<sup><small>x</small></sup></string>
     <string name="log">log</string>
     <string name="ln">ln</string>
     <string name="factorial">n!</string>
