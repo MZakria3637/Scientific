@@ -9,7 +9,7 @@
     tools:layout_editor_absoluteY="0dp">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/result"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="@drawable/btn_bg"
@@ -32,7 +32,7 @@
         app:layout_constraintEnd_toStartOf="@+id/cube"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/result" />
 
     <Button
         android:id="@+id/square"
@@ -44,7 +44,7 @@
         app:layout_constraintEnd_toStartOf="@+id/pi"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/cube"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/result" />
 
     <Button
         android:id="@+id/cube"
@@ -56,7 +56,7 @@
         app:layout_constraintEnd_toStartOf="@+id/square"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/x_pow_y"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/result" />
 
     <Button
         android:id="@+id/tan"
@@ -92,7 +92,7 @@
         app:layout_constraintEnd_toStartOf="@+id/root"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/square"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/result" />
 
     <Button
         android:id="@+id/root"
@@ -104,7 +104,7 @@
         app:layout_constraintEnd_toStartOf="@+id/y_underRoot_x"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/pi"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/result" />
 
     <Button
         android:id="@+id/y_underRoot_x"
@@ -116,7 +116,7 @@
         app:layout_constraintEnd_toStartOf="@+id/backspace"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/root"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/result" />
 
     <Button
         android:id="@+id/backspace"
@@ -128,7 +128,7 @@
         app:layout_constraintEnd_toStartOf="@+id/CE"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/y_underRoot_x"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/result" />
 
     <Button
         android:id="@+id/CE"
@@ -140,7 +140,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/backspace"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/result" />
 
     <Button
         android:id="@+id/tanh"
