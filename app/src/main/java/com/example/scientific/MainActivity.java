@@ -177,7 +177,7 @@ public class MainActivity extends AppCompatActivity {
             plus.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if(operator.equals("sqrt")||operator.equals("log")||operator.equals("cos")||operator.equals("sin")||operator.equals("tan"))
+                    if(operator.equals("sqrt")||operator.equals("log")||operator.equals("exp")||operator.equals("cos")||operator.equals("sin")||operator.equals("tan"))
                     {
                         result.append(")");
 
@@ -197,7 +197,7 @@ public class MainActivity extends AppCompatActivity {
             subtract.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if(operator.equals("sqrt")||operator.equals("log")||operator.equals("cos")||operator.equals("sin")||operator.equals("tan"))
+                    if(operator.equals("sqrt")||operator.equals("log")||operator.equals("exp")||operator.equals("cos")||operator.equals("sin")||operator.equals("tan"))
                     {
                         result.append(")");
 
@@ -217,7 +217,7 @@ public class MainActivity extends AppCompatActivity {
             multiply.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if(operator.equals("sqrt")||operator.equals("log")||operator.equals("cos")||operator.equals("sin")||operator.equals("tan"))
+                    if(operator.equals("sqrt")||operator.equals("log")||operator.equals("exp")||operator.equals("cos")||operator.equals("sin")||operator.equals("tan"))
                     {
                         result.append(")");
 
@@ -237,7 +237,7 @@ public class MainActivity extends AppCompatActivity {
             divide.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if(operator.equals("sqrt")||operator.equals("log")||operator.equals("cos")||operator.equals("sin")||operator.equals("tan"))
+                    if(operator.equals("sqrt")||operator.equals("log")||operator.equals("exp")||operator.equals("cos")||operator.equals("sin")||operator.equals("tan"))
                     {
                         result.append(")");
 
@@ -257,7 +257,7 @@ public class MainActivity extends AppCompatActivity {
             mod.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if(operator.equals("sqrt")||operator.equals("log")||operator.equals("cos")||operator.equals("sin")||operator.equals("tan"))
+                    if(operator.equals("sqrt")||operator.equals("log")||operator.equals("exp")||operator.equals("cos")||operator.equals("sin")||operator.equals("tan"))
                     {
                         result.append(")");
 
@@ -380,7 +380,7 @@ public class MainActivity extends AppCompatActivity {
             equal.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if(operator.equals("sqrt")||operator.equals("log")||operator.equals("cos")||operator.equals("sin")||operator.equals("tan"))
+                    if(operator.equals("sqrt")||operator.equals("log")||operator.equals("exp")||operator.equals("cos")||operator.equals("sin")||operator.equals("tan"))
                     {
                         result.append(")");
                     }
@@ -472,7 +472,8 @@ public class MainActivity extends AppCompatActivity {
             cos.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if (operator.equals("log")||operator.equals("sqrt") || operator.equals("sin") || operator.equals("tan")) {
+                    if (operator.equals("log") || operator.equals("exp") || operator.equals("sqrt")
+                            || operator.equals("cos") || operator.equals("sin") || operator.equals("tan")) {
                         result.append(")");
 
                     }
@@ -491,7 +492,8 @@ public class MainActivity extends AppCompatActivity {
             cosh.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if (operator.equals("log")||operator.equals("sqrt") || operator.equals("sin") || operator.equals("tan")) {
+                    if (operator.equals("log") || operator.equals("exp") || operator.equals("sqrt")
+                            || operator.equals("cos") || operator.equals("sin") || operator.equals("tan")) {
                         result.append(")");
 
                     }
@@ -510,7 +512,8 @@ public class MainActivity extends AppCompatActivity {
             sin.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if (operator.equals("log")||operator.equals("sqrt") || operator.equals("cos") || operator.equals("tan")) {
+                    if (operator.equals("log") || operator.equals("exp") || operator.equals("sqrt")
+                            || operator.equals("cos") || operator.equals("sin") || operator.equals("tan")) {
                         result.append(")");
 
                     }
@@ -529,7 +532,8 @@ public class MainActivity extends AppCompatActivity {
             sinh.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if (operator.equals("log")||operator.equals("sqrt") || operator.equals("cos") || operator.equals("tan")) {
+                    if (operator.equals("log") || operator.equals("exp") || operator.equals("sqrt")
+                            || operator.equals("cos") || operator.equals("sin") || operator.equals("tan")) {
                         result.append(")");
 
                     }
@@ -548,7 +552,8 @@ public class MainActivity extends AppCompatActivity {
             tan.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if (operator.equals("log")||operator.equals("sqrt") || operator.equals("cos") || operator.equals("sin")) {
+                    if (operator.equals("log") || operator.equals("exp") || operator.equals("sqrt")
+                            || operator.equals("cos") || operator.equals("sin") || operator.equals("tan")){
                         result.append(")");
 
                     }
@@ -567,7 +572,8 @@ public class MainActivity extends AppCompatActivity {
             tanh.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if (operator.equals("log") || operator.equals("sqrt") || operator.equals("cos")|| operator.equals("sin")) {
+                    if (operator.equals("log")||operator.equals("exp") || operator.equals("sqrt") || operator.equals("cos")|| operator.equals("sin")
+                            || operator.equals("tan")) {
                         result.append(")");
 
                     }
@@ -586,7 +592,7 @@ public class MainActivity extends AppCompatActivity {
             log.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if (operator.equals("log") || operator.equals("sqrt") || operator.equals("cos")|| operator.equals("sin") || operator.equals("tan")) {
+                    if (operator.equals("log")||operator.equals("exp") || operator.equals("sqrt") || operator.equals("cos")|| operator.equals("sin") || operator.equals("tan")) {
                    result.append(")");
 
                     }
@@ -605,7 +611,7 @@ public class MainActivity extends AppCompatActivity {
             ln.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if (operator.equals("log") || operator.equals("sqrt") || operator.equals("cos")
+                    if (operator.equals("log")||operator.equals("exp") || operator.equals("sqrt") || operator.equals("cos")
                             || operator.equals("sin") || operator.equals("tan")) {
                         result.append(")");
 
@@ -647,6 +653,41 @@ public class MainActivity extends AppCompatActivity {
                         result.append("(");
                     }
                     operator = "";
+                }
+            });
+        }
+        factorial = (Button) findViewById(R.id.factorial);
+        if (factorial != null) {
+            factorial.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    String rslt = result.getText().toString();
+                    if (rslt.equals("0")) {
+                        result.setText("0!");
+                    } else {
+                        result.append("!");
+                    }
+                    operator = "";
+                }
+            });
+        }
+        eOfx = (Button) findViewById(R.id.powerex);
+        if (eOfx != null) {
+            eOfx.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if (operator.equals("log")||operator.equals("exp") || operator.equals("sqrt") || operator.equals("cos")
+                            || operator.equals("sin") || operator.equals("tan")) {
+                        result.append(")");
+
+                    }
+                    String rslt = result.getText().toString();
+                    if (rslt.equals("0")) {
+                        result.setText("exp(");
+                    } else {
+                        result.append("exp(");
+                    }
+                    operator = "log";
                 }
             });
         }
