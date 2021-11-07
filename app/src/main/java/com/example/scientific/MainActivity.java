@@ -655,6 +655,7 @@ public class MainActivity extends AppCompatActivity {
         if (xrootY != null) {
             xrootY.setOnClickListener((View v)->
             {
+                Toast.makeText(getApplicationContext(),"Format in  x^(1/y)",Toast.LENGTH_LONG).show();
                     if (operator.equals("log")||operator.equals("exp") || operator.equals("sqrt") || operator.equals("cos")
                             || operator.equals("sin") || operator.equals("tan")) {
                         result.append(")");
