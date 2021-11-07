@@ -34,149 +34,138 @@ public class MainActivity extends AppCompatActivity {
         }
         one = (Button) findViewById(R.id.one);
         if(one!=null) {
-            one.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            one.setOnClickListener((View v)->
+            {
                     String rslt = result.getText().toString();
                     if (rslt.equals("0")) {
                         result.setText("1");
                     } else {
                         result.append("1");
                     }
-                }
+
             });
         }
         two = (Button) findViewById(R.id.two);
         if(two!=null) {
-            two.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            two.setOnClickListener((View v)->
+            {
                     String rslt = result.getText().toString();
                     if (rslt.equals("0")) {
                         result.setText("2");
                     } else {
                         result.append("2");
                     }
-                }
+
             });
         }
         three = (Button) findViewById(R.id.three);
         if(three!=null) {
-            three.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            three.setOnClickListener((View v)->
+            {
                     String rslt = result.getText().toString();
                     if (rslt.equals("0")) {
                         result.setText("3");
                     } else {
                         result.append("3");
                     }
-                }
+
             });
         }
         four = (Button) findViewById(R.id.four);
         if(four!=null) {
-            four.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            four.setOnClickListener((View v)->
+            {
                     String rslt = result.getText().toString();
                     if (rslt.equals("0")) {
                         result.setText("4");
                     } else {
                         result.append("4");
                     }
-                }
+
             });
         }
         five = (Button) findViewById(R.id.five);
         if(five!=null) {
-            five.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            five.setOnClickListener((View v)->
+            {
                     String rslt = result.getText().toString();
                     if (rslt.equals("0")) {
                         result.setText("5");
                     } else {
                         result.append("5");
                     }
-                }
+
             });
         }
         six = (Button) findViewById(R.id.six);
         if(six!=null) {
-            six.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            six.setOnClickListener((View v)->
+            {
                     String rslt = result.getText().toString();
                     if (rslt.equals("0")) {
                         result.setText("6");
                     } else {
                         result.append("6");
                     }
-                }
+
             });
         }
         seven = (Button) findViewById(R.id.seven);
         if(seven!=null) {
-            seven.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            seven.setOnClickListener((View v)->
+            {
                     String rslt = result.getText().toString();
                     if (rslt.equals("0")) {
                         result.setText("7");
                     } else {
                         result.append("7");
                     }
-                }
+
             });
         }
         eight = (Button) findViewById(R.id.eight);
         if(eight!=null) {
-            eight.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            eight.setOnClickListener((View v)->
+            {
                     String rslt = result.getText().toString();
                     if (rslt.equals("0")) {
                         result.setText("8");
                     } else {
                         result.append("8");
                     }
-                }
+
             });
         }
         nine = (Button) findViewById(R.id.nine);
         if(nine!=null) {
-            nine.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            nine.setOnClickListener((View v)->
+            {
                     String rslt = result.getText().toString();
                     if (rslt.equals("0")) {
                         result.setText("9");
                     } else {
                         result.append("9");
                     }
-                }
+
             });
         }
         zero = (Button) findViewById(R.id.zero);
         if(zero!=null) {
-            zero.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            zero.setOnClickListener((View v)->
+            {
                     String rslt = result.getText().toString();
                     if (rslt.equals("0")) {
                         result.setText("0");
                     } else {
                         result.append("0");
                     }
-                }
+
             });
         }
         plus = (Button) findViewById(R.id.plus);
         if(plus!=null) {
-            plus.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            plus.setOnClickListener((View v)->
+            {
                     if(operator.equals("sqrt")||operator.equals("log")||operator.equals("exp")||operator.equals("cos")||operator.equals("sin")||operator.equals("tan"))
                     {
                         result.append(")");
@@ -189,14 +178,13 @@ public class MainActivity extends AppCompatActivity {
                         result.append("+");
                     }
                     operator="plus";
-                }
+
             });
         }
         subtract = (Button) findViewById(R.id.subtract);
         if(subtract!=null) {
-            subtract.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            subtract.setOnClickListener((View v)->
+            {
                     if(operator.equals("sqrt")||operator.equals("log")||operator.equals("exp")||operator.equals("cos")||operator.equals("sin")||operator.equals("tan"))
                     {
                         result.append(")");
@@ -209,14 +197,13 @@ public class MainActivity extends AppCompatActivity {
                         result.append("-");
                     }
                     operator="subtract";
-                }
+                
             });
         }
         multiply = (Button) findViewById(R.id.multiply);
         if(multiply!=null) {
-            multiply.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            multiply.setOnClickListener((View v)->
+            {
                     if(operator.equals("sqrt")||operator.equals("log")||operator.equals("exp")||operator.equals("cos")||operator.equals("sin")||operator.equals("tan"))
                     {
                         result.append(")");
@@ -229,14 +216,13 @@ public class MainActivity extends AppCompatActivity {
                         result.append("*");
                     }
                     operator="multiply";
-                }
+                
             });
         }
         divide = (Button) findViewById(R.id.divide);
         if(divide!=null) {
-            divide.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            divide.setOnClickListener((View v)->
+            {
                     if(operator.equals("sqrt")||operator.equals("log")||operator.equals("exp")||operator.equals("cos")||operator.equals("sin")||operator.equals("tan"))
                     {
                         result.append(")");
@@ -249,14 +235,13 @@ public class MainActivity extends AppCompatActivity {
                         result.append("/");
                     }
                     operator="divide";
-                }
+                
             });
         }
         mod = (Button) findViewById(R.id.mod);
         if(mod!=null) {
-            mod.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            mod.setOnClickListener((View v)->
+            {
                     if(operator.equals("sqrt")||operator.equals("log")||operator.equals("exp")||operator.equals("cos")||operator.equals("sin")||operator.equals("tan"))
                     {
                         result.append(")");
@@ -269,14 +254,13 @@ public class MainActivity extends AppCompatActivity {
                         result.append("#");
                     }
                     operator="mod";
-                }
+                
             });
         }
         dot = (Button) findViewById(R.id.dot);
         if(dot!=null){
-            dot.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            dot.setOnClickListener((View v)->
+            {
                     String rslt = result.getText().toString();
                     if (!rslt.contains(".")) {
                         if (rslt.equals("0")) {
@@ -285,29 +269,27 @@ public class MainActivity extends AppCompatActivity {
                             result.append(".");
                         }
                     }
-                }
+                
             });
         }
 
         pi = (Button) findViewById(R.id.pi);
         if(pi!=null) {
-            pi.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            pi.setOnClickListener((View v)->
+            {
                     String rslt = result.getText().toString();
                     if (rslt.equals("0")) {
                         result.setText("pi");
                     } else {
                         result.append("pi");
                     }
-                }
+                
             });
         }
         root = (Button) findViewById(R.id.root);
         if(root!=null) {
-            root.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            root.setOnClickListener((View v)->
+            {
                     if(operator.equals("cos")||operator.equals("sin")||operator.equals("tan"))
                     {
                         result.append(")");
@@ -320,30 +302,27 @@ public class MainActivity extends AppCompatActivity {
                         result.append("sqrt(");
                     }
                     operator="sqrt";
-                }
+                
             });
         }
         square = (Button) findViewById(R.id.square);
         if(square!=null) {
-            square.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            square.setOnClickListener((View v)->
+            {
                     String rslt = result.getText().toString();
                     if (rslt.equals("0")) {
                         result.setText("0" + "^2");
                     } else {
                         result.append("^2");
                     }
-                }
+                
             });
         }
 
         backspace = (Button) findViewById(R.id.backspace);
         if(backspace!=null)
         {
-        backspace.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        backspace.setOnClickListener((View v)->{
                 String rslt = result.getText().toString();
                 if (!rslt.equals("0") ) {
                     if(rslt.length()!=0) {
@@ -356,14 +335,13 @@ public class MainActivity extends AppCompatActivity {
                     }
                     
                 }
-            }
+
         });
         }
         CE = (Button) findViewById(R.id.ce);
         if(CE!=null) {
-            CE.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            CE.setOnClickListener((View v)->
+            {
                     String rslt = result.getText().toString();
                     if (!rslt.equals("0")) {
 
@@ -371,15 +349,14 @@ public class MainActivity extends AppCompatActivity {
 
                     }
                     operator="";
-                }
+                
             });
         }
 
         equal = (Button) findViewById(R.id.equal);
         if(equal!=null) {
-            equal.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            equal.setOnClickListener((View v)->
+            {
                     if(operator.equals("sqrt")||operator.equals("log")||operator.equals("exp")||operator.equals("cos")||operator.equals("sin")||operator.equals("tan"))
                     {
                         result.append(")");
@@ -393,43 +370,39 @@ public class MainActivity extends AppCompatActivity {
                         result.setText(rslt);
                     }
                     operator="";
-                }
+               
 
             });
         }
         cube=findViewById(R.id.cube);
         if(cube!=null) {
-        cube.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        cube.setOnClickListener((View v)-> {
                 String rslt = result.getText().toString();
                 if (rslt.equals("0")) {
                     result.setText("0" + "^3");
                 } else {
                     result.append("^3");
                 }
-            }
+
         });
         }
         xpoweryY=findViewById(R.id.powerXy);
         if(xpoweryY!=null) {
-            xpoweryY.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            xpoweryY.setOnClickListener((View v)->
+            {
                     String rslt = result.getText().toString();
                     if (rslt.equals("0")) {
                         result.setText("0" + "^");
                     } else {
                         result.append("^");
                     }
-                }
+                
             });
         }
         R0=findViewById(R.id.r0);
         if(R0!=null) {
-            R0.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            R0.setOnClickListener((View v)->
+            {
                     String rslt = result.getText().toString();
                     try{
                     if (rslt.equals("0")||result.equals("")) {
@@ -443,17 +416,16 @@ public class MainActivity extends AppCompatActivity {
                     {
                         Toast.makeText(getApplicationContext(),"Number Must Be Float Type For Rounding",Toast.LENGTH_LONG).show();
                     }
-                }
+                
             });
         }
         R2=findViewById(R.id.r2);
         if(R2!=null) {
-            R2.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            R2.setOnClickListener((View v)->
+            {
                     String rslt = result.getText().toString();
                     try{
-                        if (rslt.equals("0")||result.equals("")) {
+                        if (rslt.equals("0")||rslt.equals("")) {
                             result.setText("0");
                         } else {
                             double a=Double.parseDouble(rslt);
@@ -464,14 +436,13 @@ public class MainActivity extends AppCompatActivity {
                     {
                         Toast.makeText(getApplicationContext(),"Number Must Be Float Type For Rounding",Toast.LENGTH_LONG).show();
                     }
-                }
+                
             });
         }
         cos = (Button) findViewById(R.id.cos);
         if (cos != null) {
-            cos.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            cos.setOnClickListener((View v)->
+            {
                     if (operator.equals("log") || operator.equals("exp") || operator.equals("sqrt")
                             || operator.equals("cos") || operator.equals("sin") || operator.equals("tan")) {
                         result.append(")");
@@ -484,14 +455,13 @@ public class MainActivity extends AppCompatActivity {
                         result.append("cos(");
                     }
                     operator = "cos";
-                }
+                
             });
         }
         cosh = (Button) findViewById(R.id.cosh);
         if (cosh != null) {
-            cosh.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            cosh.setOnClickListener((View v)->
+            {
                     if (operator.equals("log") || operator.equals("exp") || operator.equals("sqrt")
                             || operator.equals("cos") || operator.equals("sin") || operator.equals("tan")) {
                         result.append(")");
@@ -504,14 +474,13 @@ public class MainActivity extends AppCompatActivity {
                         result.append("cosh(");
                     }
                     operator = "cos";
-                }
+                
             });
         }
         sin = (Button) findViewById(R.id.sin);
         if (sin != null) {
-            sin.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            sin.setOnClickListener((View v)->
+            {
                     if (operator.equals("log") || operator.equals("exp") || operator.equals("sqrt")
                             || operator.equals("cos") || operator.equals("sin") || operator.equals("tan")) {
                         result.append(")");
@@ -524,14 +493,13 @@ public class MainActivity extends AppCompatActivity {
                         result.append("sin(");
                     }
                     operator = "sin";
-                }
+                
             });
         }
         sinh = (Button) findViewById(R.id.sinh);
         if (sinh != null) {
-            sinh.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            sinh.setOnClickListener((View v)->
+            {
                     if (operator.equals("log") || operator.equals("exp") || operator.equals("sqrt")
                             || operator.equals("cos") || operator.equals("sin") || operator.equals("tan")) {
                         result.append(")");
@@ -544,14 +512,13 @@ public class MainActivity extends AppCompatActivity {
                         result.append("sinh(");
                     }
                     operator = "sin";
-                }
+                
             });
         }
         tan = (Button) findViewById(R.id.tan);
         if (tan != null) {
-            tan.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            tan.setOnClickListener((View v)->
+            {
                     if (operator.equals("log") || operator.equals("exp") || operator.equals("sqrt")
                             || operator.equals("cos") || operator.equals("sin") || operator.equals("tan")){
                         result.append(")");
@@ -564,14 +531,13 @@ public class MainActivity extends AppCompatActivity {
                         result.append("tan(");
                     }
                     operator = "tan";
-                }
+                
             });
         }
         tanh = (Button) findViewById(R.id.tanh);
         if (tanh != null) {
-            tanh.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            tanh.setOnClickListener((View v)->
+            {
                     if (operator.equals("log")||operator.equals("exp") || operator.equals("sqrt") || operator.equals("cos")|| operator.equals("sin")
                             || operator.equals("tan")) {
                         result.append(")");
@@ -584,14 +550,13 @@ public class MainActivity extends AppCompatActivity {
                         result.append("tanh(");
                     }
                     operator = "tan";
-                }
+                
             });
         }
         log = (Button) findViewById(R.id.log);
         if (log != null) {
-            log.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            log.setOnClickListener((View v)->
+            {
                     if (operator.equals("log")||operator.equals("exp") || operator.equals("sqrt") || operator.equals("cos")|| operator.equals("sin") || operator.equals("tan")) {
                    result.append(")");
 
@@ -603,14 +568,13 @@ public class MainActivity extends AppCompatActivity {
                         result.append("log10(");
                     }
                     operator = "log";
-                }
+                
             });
         }
         ln = (Button) findViewById(R.id.ln);
         if (ln != null) {
-            ln.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            ln.setOnClickListener((View v)->
+            {
                     if (operator.equals("log")||operator.equals("exp") || operator.equals("sqrt") || operator.equals("cos")
                             || operator.equals("sin") || operator.equals("tan")) {
                         result.append(")");
@@ -623,14 +587,13 @@ public class MainActivity extends AppCompatActivity {
                         result.append("ln(");
                     }
                     operator = "log";
-                }
+                
             });
         }
         rightBracket = (Button) findViewById(R.id.rbracket);
         if (rightBracket != null) {
-            rightBracket.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            rightBracket.setOnClickListener((View v)->
+            {
                     String rslt = result.getText().toString();
                     if (rslt.equals("0")) {
                         result.setText(")");
@@ -638,14 +601,13 @@ public class MainActivity extends AppCompatActivity {
                         result.append(")");
                     }
                     operator = "";
-                }
+                
             });
         }
         leftBracket = (Button) findViewById(R.id.lbracket);
         if (leftBracket != null) {
-            leftBracket.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            leftBracket.setOnClickListener((View v)->
+            {
                     String rslt = result.getText().toString();
                     if (rslt.equals("0")) {
                         result.setText("(");
@@ -653,14 +615,13 @@ public class MainActivity extends AppCompatActivity {
                         result.append("(");
                     }
                     operator = "";
-                }
+                
             });
         }
         factorial = (Button) findViewById(R.id.factorial);
         if (factorial != null) {
-            factorial.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            factorial.setOnClickListener((View v)->
+            {
                     String rslt = result.getText().toString();
                     if (rslt.equals("0")) {
                         result.setText("0!");
@@ -668,14 +629,13 @@ public class MainActivity extends AppCompatActivity {
                         result.append("!");
                     }
                     operator = "";
-                }
+                
             });
         }
         eOfx = (Button) findViewById(R.id.powerex);
         if (eOfx != null) {
-            eOfx.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            eOfx.setOnClickListener((View v)->
+            {
                     if (operator.equals("log")||operator.equals("exp") || operator.equals("sqrt") || operator.equals("cos")
                             || operator.equals("sin") || operator.equals("tan")) {
                         result.append(")");
@@ -688,10 +648,28 @@ public class MainActivity extends AppCompatActivity {
                         result.append("exp(");
                     }
                     operator = "log";
-                }
+                
             });
         }
+        xrootY = (Button) findViewById(R.id.yunderootx);
+        if (xrootY != null) {
+            xrootY.setOnClickListener((View v)->
+            {
+                    if (operator.equals("log")||operator.equals("exp") || operator.equals("sqrt") || operator.equals("cos")
+                            || operator.equals("sin") || operator.equals("tan")) {
+                        result.append(")");
 
+                    }
+                    String rslt = result.getText().toString();
+                    if (rslt.equals("0")) {
+                        result.setText("0^(1/");
+                    } else {
+                        result.append("^(1/");
+                    }
+                    operator = "log";
+
+            });
+        }
     }
 
     @Override
