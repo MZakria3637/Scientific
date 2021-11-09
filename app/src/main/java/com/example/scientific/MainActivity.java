@@ -37,8 +37,9 @@ public class MainActivity extends AppCompatActivity {
             one.setOnClickListener((View v)->
             {
                     String rslt = result.getText().toString();
-                    if (rslt.equals("0")) {
+                    if (rslt.equals("0")||operator.equals("equal")) {
                         result.setText("1");
+                        operator="";
                     } else {
                         result.append("1");
                     }
@@ -50,8 +51,9 @@ public class MainActivity extends AppCompatActivity {
             two.setOnClickListener((View v)->
             {
                     String rslt = result.getText().toString();
-                    if (rslt.equals("0")) {
+                    if (rslt.equals("0")||operator.equals("equal")) {
                         result.setText("2");
+                        operator="";
                     } else {
                         result.append("2");
                     }
@@ -63,8 +65,9 @@ public class MainActivity extends AppCompatActivity {
             three.setOnClickListener((View v)->
             {
                     String rslt = result.getText().toString();
-                    if (rslt.equals("0")) {
+                    if (rslt.equals("0")||operator.equals("equal")) {
                         result.setText("3");
+                        operator="";
                     } else {
                         result.append("3");
                     }
@@ -76,8 +79,9 @@ public class MainActivity extends AppCompatActivity {
             four.setOnClickListener((View v)->
             {
                     String rslt = result.getText().toString();
-                    if (rslt.equals("0")) {
+                    if (rslt.equals("0")||operator.equals("equal")) {
                         result.setText("4");
+                        operator="";
                     } else {
                         result.append("4");
                     }
@@ -89,8 +93,9 @@ public class MainActivity extends AppCompatActivity {
             five.setOnClickListener((View v)->
             {
                     String rslt = result.getText().toString();
-                    if (rslt.equals("0")) {
+                    if (rslt.equals("0")||operator.equals("equal")) {
                         result.setText("5");
+                        operator="";
                     } else {
                         result.append("5");
                     }
@@ -102,8 +107,9 @@ public class MainActivity extends AppCompatActivity {
             six.setOnClickListener((View v)->
             {
                     String rslt = result.getText().toString();
-                    if (rslt.equals("0")) {
+                    if (rslt.equals("0")||operator.equals("equal")) {
                         result.setText("6");
+                        operator="";
                     } else {
                         result.append("6");
                     }
@@ -115,8 +121,9 @@ public class MainActivity extends AppCompatActivity {
             seven.setOnClickListener((View v)->
             {
                     String rslt = result.getText().toString();
-                    if (rslt.equals("0")) {
+                    if (rslt.equals("0")||operator.equals("equal")) {
                         result.setText("7");
+                        operator="";
                     } else {
                         result.append("7");
                     }
@@ -128,10 +135,11 @@ public class MainActivity extends AppCompatActivity {
             eight.setOnClickListener((View v)->
             {
                     String rslt = result.getText().toString();
-                    if (rslt.equals("0")) {
+                    if (rslt.equals("0")||operator.equals("equal")) {
                         result.setText("8");
                     } else {
                         result.append("8");
+                        operator="";
                     }
 
             });
@@ -141,10 +149,11 @@ public class MainActivity extends AppCompatActivity {
             nine.setOnClickListener((View v)->
             {
                     String rslt = result.getText().toString();
-                    if (rslt.equals("0")) {
+                    if (rslt.equals("0")||operator.equals("equal")) {
                         result.setText("9");
                     } else {
                         result.append("9");
+                        operator="";
                     }
 
             });
@@ -154,8 +163,9 @@ public class MainActivity extends AppCompatActivity {
             zero.setOnClickListener((View v)->
             {
                     String rslt = result.getText().toString();
-                    if (rslt.equals("0")) {
+                    if (rslt.equals("0")||operator.equals("equal")) {
                         result.setText("0");
+                        operator="";
                     } else {
                         result.append("0");
                     }
@@ -245,7 +255,6 @@ public class MainActivity extends AppCompatActivity {
                     if(operator.equals("sqrt")||operator.equals("log")||operator.equals("exp")||operator.equals("cos")||operator.equals("sin")||operator.equals("tan"))
                     {
                         result.append(")");
-
                     }
                     String rslt = result.getText().toString();
                     if (rslt.equals("0")) {
@@ -290,7 +299,7 @@ public class MainActivity extends AppCompatActivity {
         if(root!=null) {
             root.setOnClickListener((View v)->
             {
-                    if(operator.equals("cos")||operator.equals("sin")||operator.equals("tan"))
+                if(operator.equals("sqrt")||operator.equals("log")||operator.equals("exp")||operator.equals("cos")||operator.equals("sin")||operator.equals("tan"))
                     {
                         result.append(")");
 
@@ -367,9 +376,16 @@ public class MainActivity extends AppCompatActivity {
                     } else {
                         Expression e = new Expression(rslt);
                         rslt = String.valueOf(e.calculate());
-                        result.setText(rslt);
+                        if(rslt.equals("NaN"))
+                        {
+                            result.setText("Syntax Error");
+                            Toast.makeText(getApplicationContext(), "Please Enter Appropriate Expression", Toast.LENGTH_LONG).show();
+                        }
+                        else {
+                            result.setText(rslt);
+                        }
                     }
-                    operator="";
+                    operator="equal";
                
 
             });
@@ -608,6 +624,11 @@ public class MainActivity extends AppCompatActivity {
         if (leftBracket != null) {
             leftBracket.setOnClickListener((View v)->
             {
+                if (operator.equals("log")||operator.equals("exp") || operator.equals("sqrt") || operator.equals("cos")
+                        || operator.equals("sin") || operator.equals("tan")) {
+                    result.append(")");
+
+                }
                     String rslt = result.getText().toString();
                     if (rslt.equals("0")) {
                         result.setText("(");
